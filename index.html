@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Your Money</title>
+    <link rel="shortcut icon" href="./image/hand.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-3xl font-bold m-4">
+        Watch Your <span class="text-blue-600"> Money</span>
+      </h1>
+    </header>
+
+    <main
+      class="md:grid md:grid-cols-2 md:gap-2 md:place-content-stretch md:p-1 flex flex-col"
+    >
+      <div class="imageContainer md:flex md:items-center my-2">
+        <img
+          class="md:px-4"
+          src="./image/markus-winkler-BvlxNyjnIzg-unsplash.jpg"
+          alt="A image of coin under a microscope"
+        />
+      </div>
+      <div
+        class="formSectiton bg-slate-200 flex flex-col items-center content-center py-5"
+      >
+        <h3 class="text-xl font-bold py-4">Income</h3>
+        <div class="formContainer flex content-center flex-col">
+          <p class="text-right m-1">
+            <span class=" "> Income :</span>
+            <input class="focus:outline-0 px-2 py-1" type="text" />
+          </p>
+        </div>
+
+        <h3 class="text-xl font-bold py-4">Expenses</h3>
+        <div class="formContainer flex content-center flex-col">
+          <p class="text-right m-1">
+            <span class=" "> Food :</span>
+            <input class="focus:outline-0 px-2 py-1" type="text" />
+          </p>
+          <p class="text-right m-1">
+            <span class=" "> Rent :</span>
+            <input class="focus:outline-0 px-2 py-1" type="text" />
+          </p>
+          <p class="text-right m-1">
+            <span class=" "> Cloth :</span>
+            <input class="focus:outline-0 px-2 py-1" type="text" />
+          </p>
+        </div>
+
+        <button
+          class="bg-blue-500 py-2 px-6 text-center text-white text-xl font-bold my-4 rounded"
+        >
+          Calculate
+        </button>
+
+        <h3 class="text-xl font-bold py-2">
+          Total Expenses : <span>5500</span>
+        </h3>
+        <h3 class="text-xl font-bold py-2">Balance : <span>5500</span></h3>
+
+        <div class="flex justify-center">
+          <span class="m-1 self-center">Save</span>
+          <input
+            class="m-1 focus:outline-0 px-1 w-[80px] text-center"
+            type="text"
+          /><span class="m-1 self-center">%</span>
+          <button
+            class="bg-blue-500 py-1 px-6 m-1 text-center text-white text-xl font-bold rounded"
+          >
+            Save
+          </button>
+        </div>
+        <h3 class="text-xl font-bold py-1">
+          Saving Amount : <span>2000</span>
+        </h3>
+        <h3 class="text-xl font-bold py-1">
+          Remaining Balance: : <span>2500</span>
+        </h3>
+      </div>
+    </main>
+
+    <script src="./js/index.js
+   "></script>
+  </body>
+</html>
