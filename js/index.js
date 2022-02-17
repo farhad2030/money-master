@@ -11,21 +11,33 @@ let colothValue = 0;
 let saveValue = 0;
 
 incomeField.addEventListener("keyup", function (event) {
-  getInput(event.target, event.target.value);
+  getInput(event.target, event.target.value, "income");
 });
 
 foodField.addEventListener("keyup", function (event) {
-  getInput(event.target, event.target.value);
+  getInput(event.target, event.target.value, "food");
+});
+rentField.addEventListener("keyup", function (event) {
+  getInput(event.target, event.target.value, "rent");
+});
+clothField.addEventListener("keyup", function (event) {
+  getInput(event.target, event.target.value, "cloth");
 });
 
-function getInput(elment, value) {
-  incomeValue = value;
-  console.log(incomeValue);
+function getInput(elment, value, type) {
+  eval(type + "Value" + " = " + value + ";");
 
-  //   // show error message
   let parentOfField = elment.parentNode;
-  console.log(parentOfField);
+
   let nodelist = parentOfField.childNodes;
-  //   console.log(nodelist[5]);
-  nodelist[5].innerText = "hello";
+
+  if (typeof incomeValue != "number") {
+    nodelist[5].innerText = "Must type number";
+  } else if (incomeValue < 0) {
+    nodelist[5].innerText = "Must type positive";
+  } else {
+    nodelist[5].innerText = "";
+    eval(type + "Value" + " = " + value + ";");
+  }
+  console.log(eval(type + "Value" + " = " + value + ";"));
 }
