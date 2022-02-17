@@ -83,15 +83,18 @@
         <!-- end Expenses area -->
 
         <button
+          id="calculate"
           class="bg-blue-500 py-2 px-6 text-center text-white text-xl font-bold my-4 rounded"
         >
           Calculate
         </button>
 
         <h3 class="text-xl font-bold py-2">
-          Total Expenses : <span>5500</span>
+          Total Expenses : <span id="expenses">5500</span>
         </h3>
-        <h3 class="text-xl font-bold py-2">Balance : <span>5500</span></h3>
+        <h3 class="text-xl font-bold py-2">
+          Balance : <span id="balance">5500</span>
+        </h3>
 
         <div class="flex justify-center">
           <span class="m-1 self-center">Save</span>
@@ -106,6 +109,7 @@
             Save
           </button>
         </div>
+        <span id="saveError" class="text-red-400 block text-left"></span>
         <h3 class="text-xl font-bold py-1">
           Saving Amount : <span>2000</span>
         </h3>
@@ -115,7 +119,6 @@
       </div>
     </main>
 
-    <script src="./js/index.js
-   "></script>
+    <script src="./js/index.js "></script>
   </body>
 </html>
