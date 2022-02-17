@@ -29,29 +29,61 @@
       <div
         class="formSectiton bg-slate-200 flex flex-col items-center content-center py-5"
       >
+        <!------------income area------ -->
         <h3 class="text-xl font-bold py-4">Income</h3>
         <div class="formContainer flex content-center flex-col">
           <p class="text-right m-1">
             <span class=" "> Income :</span>
-            <input class="focus:outline-0 px-2 py-1" type="text" />
+
+            <input
+              id="incomeField"
+              class="focus:outline-0 px-2 py-1"
+              type="text"
+            />
+            <span class="text-red-400 block text-left">hhhh</span>
+
           </p>
+          <!-- <div class="incomeError">Income field must be number</div> -->
         </div>
+        <!-- end income area -->
+
+        <!---------------Expenses -------------------->
 
         <h3 class="text-xl font-bold py-4">Expenses</h3>
         <div class="formContainer flex content-center flex-col">
           <p class="text-right m-1">
             <span class=" "> Food :</span>
-            <input class="focus:outline-0 px-2 py-1" type="text" />
+            <input
+              id="foodField"
+              class="focus:outline-0 px-2 py-1"
+              type="text"
+            />
+            <div class="text-red-400">hhhh</div>
           </p>
+          <!-- <div class="incomeError">Income field must be number</div> -->
           <p class="text-right m-1">
             <span class=" "> Rent :</span>
-            <input class="focus:outline-0 px-2 py-1" type="text" />
+            <input
+              id="rentField"
+              class="focus:outline-0 px-2 py-1"
+              type="text"
+            />
+            <div class="text-red-400">hhhh</div>
+
           </p>
           <p class="text-right m-1">
             <span class=" "> Cloth :</span>
-            <input class="focus:outline-0 px-2 py-1" type="text" />
+            <input
+              id="clothField"
+              class="focus:outline-0 px-2 py-1"
+              type="text"
+            />
+            <div class="text-red-400">hhhh</div>
+
           </p>
         </div>
+
+        <!-- end Expenses area -->
 
         <button
           class="bg-blue-500 py-2 px-6 text-center text-white text-xl font-bold my-4 rounded"
@@ -67,6 +99,7 @@
         <div class="flex justify-center">
           <span class="m-1 self-center">Save</span>
           <input
+            id="saveField"
             class="m-1 focus:outline-0 px-1 w-[80px] text-center"
             type="text"
           /><span class="m-1 self-center">%</span>
